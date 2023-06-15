@@ -1,0 +1,35 @@
+apiVersion: api/V1
+kind: deployment
+metadata: 
+  name: aws-api-deployment
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels: 
+      app: aws-api-microservice
+  template:
+    metadata:
+      labels:
+        app: aws-api-microservice
+    spec:
+      containers:
+      - name: aws-api-microservice
+        image:  725455238628.dkr.ecr.ap-south-1.amazonaws.com/myaws-app:latest
+        ports:
+        - containerPort: 80
+
+
+---
+apiVersion: V1
+kind: Service
+metadata:
+  name: aws-api-service
+  namespace: default
+spec:
+  selector:
+    app: aws-api-microservice
+  ports:
+    - port: 80
+      targetPort: 80
+
