@@ -1,0 +1,8 @@
+docker: https://www.youtube.com/watch?v=pg19Z8LL06w
+kubernetes : https://www.youtube.com/watch?v=0j-iIW3_sbg&t=1458s
+
+Kubernetes with intellipaat: https://www.youtube.com/watch?v=Vjetwwgv36o&t=2154s
+
+how to push docker to ECR:  https://www.youtube.com/watch?v=t0TXPCwcg3I
+
+EKS Deployment: https://www.youtube.com/watch?v=2AaksjrOF_4
